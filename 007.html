@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        <input type="hidden" name="hidden" value="abc">
+
+        <fieldset>
+            <legend>main</legend>
+            <label for="acc">account:</label>
+            <input type="text" name="acc" id="acc" maxlength="10">
+            <br>
+
+            <label for="pwd">password:</label>
+            <input type="password" name="pwd" id="pwd" maxlength="8">
+            <br>
+
+            <span>gender:</span>
+            <input type="radio" name="gender" id="gender_male" value="male" checked>
+            <label for="gender_male">male</span>
+                <input disabled type="radio" name="gender" id="gender_female" value="female">
+                <label for="gender_female">female</label>
+                <br>
+        </fieldset>
+
+        <span>hobby:</span>
+        <input type="checkbox" name="hobby" id="hobby1" value="1">
+        <label for="hobby1">1</label>
+        <input type="checkbox" name="hobby" id="hobby2" value="2">
+        <label for="hobby2">2</label>
+        <input type="checkbox" name="hobby" id="hobby3" value="3">
+        <label for="hobby3">3</label>
+        <br>
+
+        <label for="textarea">other:</label>
+        <textarea name="textarea" id="textarea"></textarea>
+        <br>
+
+        <span>from:</span>
+        <select name="from" id="from">
+            <option value="a">a</option>
+            <option value="a">a</option>
+            <option value="a" selected>a</option>
+            <option value="a">a</option>
+            <option value="a">a</option>
+        </select> <br>
+
+        <!-- <button>submit</button> -->
+        <input type="submit" id="submit" value="submit"> <br>
+
+        <!-- <button type="button">button</button> -->
+        <input type="button" value="button">
+
+    </form>
+</body>
+
+</html>
