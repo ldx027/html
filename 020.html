@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body>p:first-child::first-letter {
+            font-size: 40px;
+            color: yellowgreen;
+        }
+        body>p:first-child::first-line {
+            background: yellow;
+        }
+        ::selection {
+            background: black;
+            color: white;
+        }
+        input::placeholder {
+            color: yellowgreen;
+        }
+        input~p::before {
+            content: "$";
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore eveniet quas. In asperiores reiciendis perferendis labore molestiae itaque accusantium quas quaerat animi sunt, sint quae, facilis ea explicabo cumque voluptatum, dolor repellat nobis. Iure mollitia quae dolorem placeat asperiores quibusdam quidem tenetur nihil ad non, quam voluptatibus dignissimos, eius laudantium amet modi quaerat sint quos veritatis perferendis sed praesentium natus. Officiis perspiciatis provident explicabo doloremque ab enim maxime eum dolor, omnis consectetur unde repellendus eius aliquid vitae, voluptatem ea qui nemo? Inventore laborum expedita, velit explicabo voluptatibus sequi magni dolores officia nihil dolorem omnis sed a quae hic adipisci?</p>
+    <input type="text" placeholder="your account">
+    <p>198</p>
+    <p>298</p>
+    <p>398</p>
+</body>
+
+</html>
