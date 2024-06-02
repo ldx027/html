@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div>p:first-child {
+            color: yellowgreen;
+        }
+
+        span:nth-child(2n) {
+            color: skyblue;
+        }
+
+        span:nth-child(-n+3) {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <span>a</span>
+    <span>b</span>
+    <span>c</span>
+    <span>d</span>
+    <span>a</span>
+    <div>
+        <p>a</p>
+        <p>b</p>
+        <p>c</p>
+        <p>d</p>
+        <p>e</p>
+    </div>
+</body>
+
+</html>
