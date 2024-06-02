@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .leftfix {
+            float: left;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #container {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 960px;
+            text-align: center;
+        }
+
+        #page-header {
+            height: 80px;
+        }
+
+        #logo,
+        #banner1,
+        #banner2 {
+            line-height: 80px;
+            height: 80px;
+            background-color: #ccc;
+        }
+
+        #logo {
+            width: 200px;
+            margin-right: 10px;
+        }
+
+        #banner1 {
+            width: 540px;
+            margin-right: 10px;
+        }
+
+        #banner2 {
+            width: 200px;
+        }
+
+        #menu {
+            width: 960px;
+            height: 30px;
+            background-color: #ccc;
+            margin-top: 10px;
+            line-height: 30px;
+        }
+
+        #left,
+        #right {
+            margin-top: 10px;
+            height: 410px;
+        }
+
+        #top {
+            margin-bottom: 10px;
+        }
+
+        #left {
+            width: 750px;
+        }
+
+        #right {
+            margin-left: 10px;
+            width: 200px;
+        }
+
+        #item1,
+        #item2 {
+            width: 368px;
+            height: 198px;
+            border: 1px solid black;
+            line-height: 198px;
+        }
+
+        #item3,
+        #item4,
+        #item5,
+        #item6 {
+            width: 178px;
+            height: 198px;
+            border: 1px solid black;
+            line-height: 200px;
+        }
+
+        #item3, #item4, #item5 {
+            margin-right: 10px;
+        }
+
+        #item1 {
+            margin-right: 10px;
+        }
+
+        #item7, #item8, #item9 {
+            width: 198px;
+            height: 128px;
+            border: 1px solid black;
+            line-height: 130px;
+        }
+
+        #item7, #item8 {
+            margin-bottom: 10px;
+        }
+
+        #page-foot {
+            height: 60px;
+            background-color: #ccc;
+            margin-top: 10px;
+            line-height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="page-header" class="clearfix">
+            <div id="logo" class="leftfix">logo</div>
+            <div id="banner1" class="leftfix">banner1</div>
+            <div id="banner2" class="leftfix">banner2</div>
+        </div>
+        <div id="menu">menu</div>
+        <div id="content" class="clearfix">
+            <div id="left" class="leftfix">
+                <div id="top" class="clearfix">
+                    <div id="item1" class="leftfix">item1</div>
+                    <div id="item2" class="leftfix">item2</div>
+                </div>
+                <div id="bottom" class="clearfix">
+                    <div id="item3" class="leftfix">item3</div>
+                    <div id="item4" class="leftfix">item4</div>
+                    <div id="item5" class="leftfix">item5</div>
+                    <div id="item6" class="leftfix">item6</div>
+                </div>
+            </div>
+            <div id="right" class="leftfix">
+                <div id="item7" class="leftfix">item7</div>
+                <div id="item8" class="leftfix">item8</div>
+                <div id="item9" class="leftfix">item9</div>
+            </div>
+        </div>
+        <div id="page-foot">foot</div>
+    </div>
+</body>
+
+</html>

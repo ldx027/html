@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,24 @@
     <style>
         * {
             margin: 0px;
+            transition: 0.5s;
+        }
+
+        #main {
+            width: 960px;
+            margin: 0 auto;
+            margin-top: 15px;
         }
 
         .outer {
-            background: gray;
+            background-color: gray;
+            font-size: 0px;
+            margin-bottom: 10px;
+        }
+
+        .inner {
+            background-color: gray;
+            font-size: 0px;
         }
 
         .outer::after {
@@ -20,18 +35,155 @@
         }
 
         #logo {
-            width: 50px;
-            height: 50px;
+            width: 200px;
+            height: 80px;
+            border: 0;
+            background-color: orange;
+            margin-right: 10px;
+            float: left;
+        }
+
+        #banner1 {
+            width: 540px;
+            height: 80px;
+            background-color: skyblue;
+            float: left;
+            margin-right: 10px;
+        }
+
+        #banner2 {
+            width: 200px;
+            height: 80px;
+            background-color: yellowgreen;
+            float: left;
+        }
+
+        #menu {
+            height: 30px;
+            background-color: gold;
+            margin-bottom: 10px;
+        }
+
+        #left {
+            margin-right: 10px;
+            float: left;
+            width: 370px;
+        }
+
+        #box1 {
+            width: 370px;
+            height: 200px;
+            background-color: skyblue;
+            float: left;
+            margin-bottom: 10px;
+        }
+
+        #box3 {
+            width: 180px;
+            height: 200px;
+            background-color: gold;
+            float: left;
+            margin-right: 10px;
+        }
+
+        #box4 {
+            width: 180px;
+            height: 200px;
+            background-color: pink;
+            float: left;
+        }
+
+        #middle {
+            margin-right: 10px;
+            float: left;
+            width: 370px;
+        }
+
+        #box2 {
+            width: 370px;
+            height: 200px;
+            background-color: yellowgreen;
+            float: left;
+            margin-bottom: 10px;
+        }
+
+        #box5 {
+            width: 180px;
+            height: 200px;
+            background-color: gold;
+            float: left;
+            margin-right: 10px;
+        }
+
+        #box6 {
+            width: 180px;
+            height: 200px;
+            background-color: orange;
+            float: left;
+        }
+
+        #right {
+            width: 200px;
+            float: left;
+        }
+
+        #box7 {
+            width: 200px;
+            height: 130px;
+            background-color: gold;
+            margin-bottom: 10px;
+            float: left;
+        }
+
+        #box8 {
+            width: 200px;
+            height: 130px;
+            background-color: pink;
+            margin-bottom: 10px;
+            float: left;
+        }
+
+        #box9 {
+            width: 200px;
+            height: 130px;
+            background-color: skyblue;
+            float: left;
+        }
+
+        .foot {
+            height: 60px;
+            background-color: yellowgreen;
         }
     </style>
 </head>
+
 <body>
-    <div class="outer">
-        <button id="logo"></button>
-        <div id="banner1"></div>
-        <div id="banner2"></div>
+    <div id="main">
+        <div class="outer">
+            <button id="logo"></button>
+            <div id="banner1"></div>
+            <div id="banner2"></div>
+        </div>
+        <div id="menu"></div>
+        <div class="outer">
+            <div class="inner" id="left">
+                <div id="box1"></div>
+                <div id="box3"></div>
+                <div id="box4"></div>
+            </div>
+            <div class="inner" id="middle">
+                <div id="box2"></div>
+                <div id="box5"></div>
+                <div id="box6"></div>
+            </div>
+            <div class="inner" id="right">
+                <div id="box7"></div>
+                <div id="box8"></div>
+                <div id="box9"></div>
+            </div>
+        </div>
+        <div class="foot"></div>
     </div>
-    <div class="outer"></div>
-    <div class="outer"></div>
 </body>
+
 </html>
