@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.leftfix {
+    float: left;
+}
+
+.rightfix {
+    float: right;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+#banner-header {
+    width: 1000px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.header {
+    height: 30px;
+    background-color: #E3E4E5;
+    line-height: 30px;
+}
+
+.header a {
+    font-size: 13px;
+    color: gray;
+}
+
+#logo {
+    height: 20px;
+    margin: 0 10px;
+}
