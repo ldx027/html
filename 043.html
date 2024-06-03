@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: gray;
+            position: relative;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            z-index: 0;
+            transition: 0.5s;
+        }
+
+        .box:hover {
+            background-color: aqua;
+            z-index: 1;
+        }
+
+        .box1 {
+            background-color: skyblue;
+        }
+
+        .box2 {
+            background-color: yellowgreen;
+            position: relative;
+            top: -170px;
+            left: 30px;
+        }
+
+        .box3 {
+            background-color: orange;
+            position: absolute;
+            top: 60px;
+            left: 60px;
+        }
+
+        .box4 {
+            background-color: gold;
+            position: fixed;
+            top: 90px;
+            left: 90px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
