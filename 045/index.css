@@ -3,14 +3,22 @@
     padding: 0;
 }
 
-ul,
-ol {
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    color: orange;
+}
+
+ul, ol {
     list-style: none;
 }
 
-a {
-    color: black;
-    text-decoration: none;
+.container {
+    width: 1100px;
+    margin: 0 auto;
 }
 
 .leftfix {
@@ -21,36 +29,92 @@ a {
     float: right;
 }
 
-.clear::after {
-    content: "";
-    display: block;
+.clearfix {
     clear: both;
 }
 
-.container {
-    width: 1000px;
-    margin: 0 auto;
+.topbar {
+    height: 30px;
+    background-color: #ECECEC;
+    line-height: 30px;
     font-size: 0;
 }
 
-#banner-header {
-    width: 1000px;
-    height: 300px;
-    object-fit: cover;
+.topbar a, .topbar span {
+    font-size: 12px;
 }
 
-.header {
-    height: 30px;
-    background-color: #E3E4E5;
-    line-height: 30px;
+#signin {
+    margin-left: 10px;
 }
 
-.header a {
-    font-size: 13px;
-    color: gray;
-}
-
-#logo {
-    height: 20px;
+#register {
     margin: 0 10px;
+}
+
+.topbar li a{
+    padding: 0 10px;
+    border-left: 1px solid gray;
+}
+
+.topbar li:last-child a {
+    padding-right: 0;
+}
+
+.topbar-left img {
+    width: 20px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.search {
+    margin-top: 20px;
+}
+
+.search img {
+    height: 120px;
+}
+
+.search-right {
+    margin-left: 50px;
+}
+
+.searchbar{
+    margin-top: 40px;
+}
+
+.searchbar input[type="text"] {
+    border: 3px solid red;
+    width: 510px;
+    height: 30px;
+}
+
+.searchbar input[type="button"] {
+    width: 50px;
+    height: 36px;
+    background-color: red;
+    border: 0;
+    cursor: pointer;
+}
+
+.searchbar button {
+    width: 100px;
+    height: 36px;
+    border: 1px solid gray;
+    margin-left: 30px;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+
+.header-nav {
+    margin-top: 100px;
+}
+
+.header-nav a {
+    color: #000;
+    margin-left: 20px;
+}
+
+.header-nav a:hover {
+    color: red;
 }
